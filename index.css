@@ -2,11 +2,18 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .container{
@@ -143,7 +150,12 @@ footer .footer{
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
+    body{
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .tic-tac-toe{
         width: 70%;
     }
