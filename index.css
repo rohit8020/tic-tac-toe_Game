@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+.heading{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tic-tac-toe{
+    width: 25%;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.item{
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.btn{
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: translateY(-1px) scale(.98);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
+}
+
+.you-win{
+    display: none;
+}
+
+.play-btn{
+    border: none;
+    background-color: chocolate;
+    padding: 1rem 2rem;
+    margin-top: 1.3rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 2px solid black;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.play-btn:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.play-btn:active{
+    outline: none;
+    transform: translateY(1px) scale(.98);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0,.5);
+    z-index: 10000;
+    transform: translateY(-200%);
+    transition: all 0.3s ease-in;
+}
+
+.show{
+    transform: translateY(0%);
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: chocolate;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tic-tac-toe{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tic-tac-toe{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .tic-tac-toe{
+        width: 70%;
+    }
+}
