@@ -7,6 +7,7 @@
             box-sizing: border-box;
 }
 
+html,
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -151,6 +152,7 @@ footer .footer{
 }
 
 @media only screen and (max-width: 420px) {
+    html,
     body{
         font-family: 'Montserrat', sans-serif;
         overflow-x: hidden;
