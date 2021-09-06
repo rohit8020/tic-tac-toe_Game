@@ -69,8 +69,14 @@ boxes.forEach(box=>{
             box.innerHTML=alterValueFunc()
             checkWinning()
             if((count==9)&&(win!=true)){
-                you_win.src="nice-try.gif"
-                modal.classList.add("show")
+                let urlChange=()=>{
+                    you_win.src="nice-try.gif"
+
+                    return true
+                }
+                if(urlChange()){
+                    modal.classList.add("show")
+                }
             }
     })
 })
