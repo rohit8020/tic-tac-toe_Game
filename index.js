@@ -30,6 +30,7 @@ let playAgain=()=>{
     
     for (let i = 0; i < 9; i++) {
         boxes.item(i).innerText=val
+        boxes.item(i).classList.remove("disable-div")
     }
     
     modal.classList.remove("show")
@@ -66,6 +67,7 @@ let checkWinning=()=>{
 boxes.forEach(box=>{
         box.addEventListener("click",()=>{
             count++
+            box.classList.add("disable-div")
             box.innerHTML=alterValueFunc()
             checkWinning()
             if((count==9)&&(win!=true)){

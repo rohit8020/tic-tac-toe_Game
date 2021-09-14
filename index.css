@@ -74,6 +74,10 @@ body{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
 }
 
+.disable-div{
+    pointer-events: none;
+}
+
 .you-win{
     display: none;
 }
