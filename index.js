@@ -51,7 +51,7 @@ let checkWinning=()=>{
     (((items[0]===items[3])&&(items[0].length==1)) && ((items[3]===items[6])&&(items[3].length==1)))||
     (((items[1]===items[4])&&(items[1].length==1)) && ((items[4]===items[7])&&(items[4].length==1)))||
     (((items[2]===items[5])&&(items[2].length==1)) && ((items[5]===items[8])&&(items[5].length==1)))||
-    (((items[0]===items[4])&&(items[0].length==1)) && ((items[4]===items[8])&&(items[5].length==1)))||
+    (((items[0]===items[4])&&(items[0].length==1)) && ((items[4]===items[8])&&(items[4].length==1)))||
     (((items[6]===items[4])&&(items[6].length==1)) && ((items[4]===items[2])&&(items[2].length==1))))&&
     (win!=true)
     ){
